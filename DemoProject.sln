@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.2092
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55D28FCB-AFF6-43F3-9F99-AE9A5BC8958E}"
+	ProjectSection(SolutionItems) = preProject
+		GridViewForm.html = GridViewForm.html
+		LoginForm.html = LoginForm.html
+		SignUpForm.html = SignUpForm.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{BF8BE930-5AD3-4485-B91B-94F45098D9BC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\intro_1.png = ..\..\..\Downloads\intro_1.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF8BE930-5AD3-4485-B91B-94F45098D9BC} = {55D28FCB-AFF6-43F3-9F99-AE9A5BC8958E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A15E453B-E1ED-45DC-8323-47D39DCCAFA4}
+	EndGlobalSection
+EndGlobal

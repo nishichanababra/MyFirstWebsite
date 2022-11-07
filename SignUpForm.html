@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+	<style>
+       body{
+	   	   font-family:Arial,sans-serif;
+	   }
+	   input[type=text],input[type=password]{
+	      width:100%;
+		  padding:12px 20px;
+		  margin: 8px 0;
+		  display:inline-block;
+		  border: 1px solid #ccc;
+		  box-sizing: border-box;
+	   }
+	   button{
+	      background-color:green;
+		  color:white;
+		  padding:14px 20px;
+		   margin: 8px 0;
+		   border:none;
+		   cursor:pointer;
+		   width:80%;
+	   }
+	   button:hover{
+	   	   opacity:0.8;
+	   }
+	   .imgcontainer{
+	   	   text-align:center;
+		   position:relative;
+		   background-color:green;
+		   padding-top:15px;
+		   padding-bottom:15px;
+	   }
+	   img.avtar{
+	   	   width:30%;
+		   border-radius:40%;
+	   }
+	   .modal{
+		   overflow:auto;
+		   width:100%;
+		   height:100%;
+		   top:0%;
+		   left:0%;
+		   z-index:1;
+		   position:fixed;
+		   background-image:url(./background.jpg);
+	   }
+	   .form{
+	     background-color:white;
+		 margin: 50px auto 5px auto;
+		 border:1px solid #888;
+		 width:400px;
+		
+		 text-align:center;
+
+	   }
+	   .form-control{
+	   	   padding: 5px 15px 5px 15px;
+		   text-align:center;
+		   position:relative;
+	   }
+	   span.psw{
+	   	   float:right;
+		   padding-top:16px;
+	   }
+	   .labelcontainer{
+	       padding:16px;
+		   text-align:center;
+		   font-size:30px;
+		   color:green;
+	   }
+	   .form-control.success input{
+	   	   border-color:purple;
+	   }
+	   .form-control.error input{
+	       border-color:#e74c3c;
+	   }
+	   .form-control i{
+	   	   visibility:hidden;
+		   position:absolute;
+		 
+	   }
+	   .form-control error i.fa-exclamation-circle{
+	       visibility:visible;
+		   color:#e74c3c;
+	   }
+	   .form-control small{
+	        visibility:hidden;
+		   position:absolute;
+		  bottom:0;
+		   left:0;
+	   }
+	   .form-control error small{
+	        visibility:visible;
+		   color:#e74c3c;
+	   }
+	   .body{
+		   width:100%;
+		   height:100vh;
+		   background-size:cover;
+		   background-color:#000000;
+		   background-repeat:no-repeat;
+	   }
+	  
+
+	</style>
+	<script src="js/signup.js"></script>
+</head>
+<body>
+   <img src="images/green1jpg.jpg" class="body"/>
+ <div class="modal">
+    
+ <form  class="form" id="form" action="gridviewform.html">
+  
+     <div class="imgcontainer">
+     <img src="images/intro_1.png" class="avtar"/>
+	 </div>
+	 <br>
+	  <label class="labelcontainer">
+	     Sign Up 
+	  </label>
+
+    <div class="form-control">
+	 <input id="username" type="text", placeholder="Username" required maxlength="30" required/>     
+	 <i class= "fas-fa-exclamation-circle"></i>
+	 <small> Error Message</small>
+	 <br>
+     <br>
+	 </div>
+
+	 <div class="form-control">
+	 <input  id="password" type="password", placeholder="Password"   required minlength="8" required maxlength="15" required/> 
+	  <i class= "fas-fa-exclamation-circle"></i>
+	 <small> Error Message</small>
+	 <br>
+	 <br>
+	 </div>
+
+	 <div class="form-control">
+	  <input id="confirmpassword" type="password", placeholder="ConfirmPassword" required minlength="8" required maxlength="15" required/> 
+	   <i class= "fas-fa-exclamation-circle"></i>
+	 <small> Error Message</small>
+	 </div>
+
+
+	 <br>
+	  <p> By creating an account you agree to our<a href="#">Terms and Privacy</a></p>
+	 <br>
+	 
+	 <button  class="button" id="submit"> SignUp
+	</button>
+	 <br>
+	 <label>
+	   <p> Already have an Account?<a href="loginform.html">SignIn</a></p>
+	 </label>
+	  <label>
+	   <p><a href="gridviewform.html">Home Page</a></p>
+	 </label>
+	 </div>
+   </form>
+    </div>
+
+</body>
+</html>
